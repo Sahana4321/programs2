@@ -1,0 +1,63 @@
+Programs:
+1) 
+class employee:
+    __salary=10000
+    def show(self):
+        print(self.__salary)
+  class personal:
+    __DOB="15 march"
+    _name="abc"
+    _address="hanuman nagar"
+    def display(self):
+        print(self.__DOB)
+ c1=employee()
+ c1.show()
+
+-->Output:-
+10000
+
+2)
+class Point:
+    def __init__(self,x=0,y=0):
+        self.x=x
+        self.y=y
+    def __str__(self):
+        return "({0},{1})".format(self.x,self.y)
+p1=Point(2,3)
+print(p1)
+
+-->Output:-
+(2,3)
+
+3)
+class vehicle:
+    def __init__(self,driver,wheels,seats):
+        self.driver=driver
+        self.wheels=wheels
+class cab(vehicle):
+    pass
+cab_1=cab('sandy',4,2)
+cab_1.driver
+-->Output:-
+'Sandy'
+
+4)
+class Person:
+    def __init__(self,name,id):
+        self.name=name
+        self.id=id
+    def display(self):
+        print(self.name,self.id)
+class Employee(Person):
+    def __init__(self,name,id,salary):
+        self.salary=salary
+        Person. __init__(self,name,id)
+    def display1(self):
+        print(self.name,self.id,self.salary)
+c1=Employee("abc",100,10000)
+c1.display1()
+-->Output:-
+abc 100 10000
+  
+    
+    
